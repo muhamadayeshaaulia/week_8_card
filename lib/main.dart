@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Latian Card',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: MycardNight(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
