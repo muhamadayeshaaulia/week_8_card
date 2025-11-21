@@ -66,6 +66,7 @@ class MycardNight extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(height: 20),
             Card(
               elevation: 8,
               shadowColor: Colors.red,
@@ -82,6 +83,50 @@ class MycardNight extends StatelessWidget {
               'Hallo muhamad ayesha', style: TextStyle(fontSize: 20, color: Colors.white),)
               ),
             ),
+            SizedBox(height: 20),
+            Card(
+              elevation: 8,
+              shadowColor: Colors.blue,
+              clipBehavior: Clip.antiAlias,
+              child: Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [Colors.blue, Colors.red],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                ),
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: Colors.white,
+                          width: 4,
+                        ),
+                      ),
+                      child: CircleAvatar(
+                        radius: 40,
+                        backgroundImage: NetworkImage('https://i.pravatar.cc/150?img=3'),
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'Muhamad Ayesha',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        
+                      ),textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
