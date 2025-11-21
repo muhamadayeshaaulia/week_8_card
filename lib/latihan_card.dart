@@ -21,6 +21,7 @@ class MycardNight extends StatelessWidget {
         child: Column(
           children: [
             Card(
+              margin: EdgeInsets.all(16),
               elevation: 8,
               color: Colors.white,
               child: Text(
