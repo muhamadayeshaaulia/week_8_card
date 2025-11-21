@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Latian Card',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: LatihanCard(),
+      home: MycardNight(),
     );
   }
 }
