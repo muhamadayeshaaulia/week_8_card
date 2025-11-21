@@ -7,10 +7,14 @@ class MycardNight extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Dahboard'),
+        title: const Text('Dashboard'),
+        titleTextStyle: TextStyle(
+          color: Colors.black,
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+        ),
         actions: const [],
       ),
-      
     );
   }
 }
