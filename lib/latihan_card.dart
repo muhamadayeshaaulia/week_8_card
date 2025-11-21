@@ -22,16 +22,16 @@ class MycardNight extends StatelessWidget {
           children: [
             Card(
               elevation: 8,
-              color: Colors.grey,
+              color: Colors.white,
               child: Text(
-                'Test',
+                'Menggunakan Card',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
             ),
             SizedBox(height: 20),
             Container(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.red,
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: [
                   BoxShadow(
