@@ -65,7 +65,23 @@ class MycardNight extends StatelessWidget {
                   Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', style: TextStyle(fontSize: 16), textAlign: TextAlign.justify,),
                 ],
               ),
-            )
+            ),
+            Card(
+              elevation: 8,
+              shadowColor: Colors.red,
+              clipBehavior: Clip.antiAlias,
+              child: Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [Colors.red, Colors.blue],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                ),
+            child: Text (
+              'Hallo muhamad ayesha', style: TextStyle(fontSize: 20, color: Colors.white),)
+              ),
+            ),
           ],
         ),
       ),
