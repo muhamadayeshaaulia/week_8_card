@@ -16,15 +16,34 @@ class MycardNight extends StatelessWidget {
         ),
         actions: const [],
       ),
+      
       body: SingleChildScrollView(
         child: Column(
           children: [
             Card(
               elevation: 8,
-              color: Colors.yellow,
+              color: Colors.grey,
               child: Text(
-                'INI TEST CARD 1',
+                'Test',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+            ),
+            SizedBox(height: 20),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black26,
+                    blurRadius: 4,
+                    offset: Offset(2, 2),
+                  ),
+                ],
+              ),
+              child: Padding(
+                padding: EdgeInsets.all(12),
+                child: Text('Menggunakan container', style: TextStyle(fontSize: 12),),
               ),
             )
           ],
