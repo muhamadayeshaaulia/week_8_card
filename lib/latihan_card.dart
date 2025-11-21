@@ -46,7 +46,14 @@ class MycardNight extends StatelessWidget {
                 padding: EdgeInsets.all(12),
                 child: Text('Menggunakan container', style: TextStyle(fontSize: 12),),
               ),
-            )
+            ),
+            Card(
+              margin: EdgeInsets.all(16),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text('Margin Text', style: TextStyle(fontSize: 10),),
+              ),
+            ),
           ],
         ),
       ),
