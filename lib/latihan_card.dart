@@ -54,6 +54,18 @@ class MycardNight extends StatelessWidget {
                 child: Text('Margin Text', style: TextStyle(fontSize: 10),),
               ),
             ),
+            SizedBox(height: 20),
+            Card(
+              elevation: 8,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Tentang saya', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold), textAlign: TextAlign.justify,),
+                  SizedBox(height: 10),
+                  Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', style: TextStyle(fontSize: 16), textAlign: TextAlign.justify,),
+                ],
+              ),
+            )
           ],
         ),
       ),
