@@ -16,7 +16,7 @@ class MycardNight extends StatelessWidget {
         ),
         actions: const [],
       ),
-      
+
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -44,14 +44,17 @@ class MycardNight extends StatelessWidget {
               ),
               child: Padding(
                 padding: EdgeInsets.all(12),
-                child: Text('Menggunakan container', style: TextStyle(fontSize: 12),),
+                child: Text(
+                  'Menggunakan container',
+                  style: TextStyle(fontSize: 12),
+                ),
               ),
             ),
             Card(
               margin: EdgeInsets.all(16),
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text('Margin Text', style: TextStyle(fontSize: 10),),
+                child: Text('Margin Text', style: TextStyle(fontSize: 10)),
               ),
             ),
             SizedBox(height: 20),
@@ -60,9 +63,17 @@ class MycardNight extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Tentang saya', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold), textAlign: TextAlign.justify,),
+                  Text(
+                    'Tentang saya',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.justify,
+                  ),
                   SizedBox(height: 10),
-                  Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', style: TextStyle(fontSize: 16), textAlign: TextAlign.justify,),
+                  Text(
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    style: TextStyle(fontSize: 16),
+                    textAlign: TextAlign.justify,
+                  ),
                 ],
               ),
             ),
@@ -79,8 +90,10 @@ class MycardNight extends StatelessWidget {
                     end: Alignment.bottomRight,
                   ),
                 ),
-            child: Text (
-              'Hallo muhamad ayesha', style: TextStyle(fontSize: 20, color: Colors.white),)
+                child: Text(
+                  'Hallo muhamad ayesha',
+                  style: TextStyle(fontSize: 20, color: Colors.white),
+                ),
               ),
             ),
             SizedBox(height: 20),
@@ -103,10 +116,7 @@ class MycardNight extends StatelessWidget {
                     Container(
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        border: Border.all(
-                          color: Colors.white,
-                          width: 4,
-                        ),
+                        border: Border.all(color: Colors.white, width: 4),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.yellow,
@@ -117,7 +127,9 @@ class MycardNight extends StatelessWidget {
                       ),
                       child: CircleAvatar(
                         radius: 40,
-                        backgroundImage: AssetImage('assets/images/profile.jpg'),
+                        backgroundImage: AssetImage(
+                          'assets/images/profile.jpg',
+                        ),
                       ),
                     ),
                     SizedBox(height: 10),
@@ -131,7 +143,10 @@ class MycardNight extends StatelessWidget {
                     ),
                     SizedBox(height: 10),
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 6,
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.deepPurpleAccent,
                         borderRadius: BorderRadius.circular(20),
@@ -165,10 +180,10 @@ class MycardNight extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.white
+                                color: Colors.white,
                               ),
-                            )
-                          ]
+                            ),
+                          ],
                         ),
                         SizedBox(
                           height: 40,
@@ -178,12 +193,26 @@ class MycardNight extends StatelessWidget {
                             width: 20,
                           ),
                         ),
-                        Text(
-                          'Following: 200',
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                          ),
+                        Column(
+                          children: [
+                            Text(
+                              'Followi',
+                              style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(height: 5),
+                            Text(
+                              '200',
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
                         ),
                         SizedBox(
                           height: 40,
@@ -193,19 +222,33 @@ class MycardNight extends StatelessWidget {
                             width: 20,
                           ),
                         ),
-                        Text(
-                          'Posts: 75',
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                          ),
+                        Column(
+                          children: [
+                            Text(
+                              'Posts',
+                              style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(height: 5),
+                            Text(
+                              '75',
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
                         ),
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
