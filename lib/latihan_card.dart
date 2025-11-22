@@ -147,6 +147,7 @@ class MycardNight extends StatelessWidget {
                     ),
                     SizedBox(height: 10),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Text(
                           'Followers: 1500',
