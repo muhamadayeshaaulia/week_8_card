@@ -107,21 +107,42 @@ class MycardNight extends StatelessWidget {
                           color: Colors.white,
                           width: 4,
                         ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.yellow,
+                            blurRadius: 4,
+                            offset: Offset(2, 2),
+                          ),
+                        ],
                       ),
                       child: CircleAvatar(
                         radius: 40,
-                        backgroundImage: NetworkImage('https://i.pravatar.cc/150?img=3'),
+                        backgroundImage: AssetImage('assets/images/profile.jpg'),
                       ),
                     ),
                     SizedBox(height: 10),
                     Text(
-                      'Muhamad Ayesha',
+                      'Muhamad Ayesha Aulia',
                       style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 26,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
-                        
-                      ),textAlign: TextAlign.center,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.deepPurpleAccent,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: const Text(
+                        'Mobile Developer',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
                     ),
                   ],
                 ),
