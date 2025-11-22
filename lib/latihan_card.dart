@@ -177,6 +177,13 @@ class MycardNight extends StatelessWidget {
                             width: 20,
                           ),
                         ),
+                        Text(
+                          'Posts: 75',
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ],
                     )
                   ],
