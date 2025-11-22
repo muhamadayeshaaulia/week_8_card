@@ -144,6 +144,18 @@ class MycardNight extends StatelessWidget {
                         ),
                       ),
                     ),
+                    SizedBox(height: 10),
+                    Row(
+                      children: [
+                        Text(
+                          'Followers: 1500',
+                          style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
+                    )
                   ],
                 ),
               ),
