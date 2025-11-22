@@ -150,8 +150,16 @@ class MycardNight extends StatelessWidget {
                         Text(
                           'Followers: 1500',
                           style: TextStyle(
-                            fontSize: 11,
+                            fontSize: 15,
                             fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 40,
+                          child: VerticalDivider(
+                            color: Colors.white,
+                            thickness: 1,
+                            width: 20,
                           ),
                         )
                       ],
