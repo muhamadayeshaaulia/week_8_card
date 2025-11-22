@@ -131,6 +131,7 @@ class MycardNight extends StatelessWidget {
                     ),
                     SizedBox(height: 10),
                     Container(
+                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                       decoration: BoxDecoration(
                         color: Colors.deepPurpleAccent,
                         borderRadius: BorderRadius.circular(20),
