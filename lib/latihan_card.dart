@@ -292,8 +292,8 @@ class MycardNight extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Icon(Icons.credit_card, color: Colors.white, size: 40),
-                        Icon(Icons.contactless, color: Colors.white, size: 40),
+                        Icon(Icons.credit_card, color: Colors.white70, size: 40),
+                        Icon(Icons.contactless, color: Colors.white70, size: 40),
                       ],
                     ),
                   ],
