@@ -16,7 +16,6 @@ class MycardNight extends StatelessWidget {
         ),
         actions: const [],
       ),
-
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -279,7 +278,6 @@ class MycardNight extends StatelessWidget {
               shadowColor: Colors.blueGrey[800],
               clipBehavior: Clip.antiAlias,
               child: Container(
-                height: 150,
                 decoration: BoxDecoration(
                   color: Colors.blueGrey[800],
                   borderRadius: BorderRadius.circular(20),
@@ -296,6 +294,21 @@ class MycardNight extends StatelessWidget {
                         Icon(Icons.contactless, color: Colors.white70, size: 40),
                       ],
                     ),
+                    SizedBox(height: 40),
+                    Row(
+                      children: [
+                        Text(
+                          '**** **** **** 1234',
+                          style: TextStyle(
+                            fontSize: 24,
+                            color: Colors.white,
+                            letterSpacing: 2,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(width: 20),
+                      ],
+                    )
                   ],
                 ),
               ),
