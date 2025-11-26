@@ -348,9 +348,70 @@ class MycardNight extends StatelessWidget {
                               ),
                             ),
                           ],
-                        )
+                        ),
                       ],
-                    )
+                    ),
+                    SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          children: [
+                            Text(
+                              'Expiry',
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.white70,
+                              ),
+                            ),
+                            SizedBox(height: 4),
+                            Text(
+                              '12/24',
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(height: 10),
+                          ],
+                        ),
+                        SizedBox(height: 4),
+                        Column(
+                          children: [
+                            Text(
+                              'CVV',
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.white70,
+                              ),
+                            ),
+                            SizedBox(height: 2),
+                            Text(
+                              '4444',
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 4),
+                        Column(
+                          children: [
+                            Text(
+                              'Mastercard',
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
