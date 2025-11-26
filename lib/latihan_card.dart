@@ -278,13 +278,14 @@ class MycardNight extends StatelessWidget {
               elevation: 8,
               shadowColor: Colors.blueGrey[800],
               clipBehavior: Clip.antiAlias,
-              
               child: Container(
+                height: 150,
                 decoration: BoxDecoration(
                   color: Colors.blueGrey[800],
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(20),
                 ),
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(40.0),
+
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
