@@ -249,6 +249,30 @@ class MycardNight extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 20),
+            Card(
+              elevation: 5,
+              margin: EdgeInsets.all(16),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  ListTile(
+                    leading: Icon(Icons.install_desktop_rounded, size: 50),
+                    title: Text('Unduh untuk belajar Flutter Card'),
+                    subtitle: Text(
+                      'Klik tombol unduh di bawah ini untuk memulai proses unduhan.',
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(16),
+                    child: Text(
+                      'Dengan menekan tombol unduh, Anda setuju untuk mematuhi semua ketentuan dan persyaratan yang berlaku terkait penggunaan materi pembelajaran Flutter Card ini.',
+                      style: TextStyle(fontSize: 14),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
