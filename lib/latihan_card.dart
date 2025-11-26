@@ -290,8 +290,16 @@ class MycardNight extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Icon(Icons.credit_card, color: Colors.white70, size: 40),
-                        Icon(Icons.contactless, color: Colors.white70, size: 40),
+                        Icon(
+                          Icons.credit_card,
+                          color: Colors.white70,
+                          size: 40,
+                        ),
+                        Icon(
+                          Icons.contactless,
+                          color: Colors.white70,
+                          size: 40,
+                        ),
                       ],
                     ),
                     SizedBox(height: 40),
@@ -306,13 +314,47 @@ class MycardNight extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(width: 20),
+                      ],
+                    ),
+                    SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Muhamad Ayesha Aulia',
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        Stack(
+                          children: [
+                            Container(
+                              width: 40,
+                              height: 40,
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                shape: BoxShape.circle,
+                              ),
+                            ),
+                            Container(
+                              width: 40,
+                              height: 40,
+                              margin: EdgeInsets.only(left: 30),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFFA500),
+                                shape: BoxShape.circle,
+                              ),
+                            ),
+                          ],
+                        )
                       ],
                     )
                   ],
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
