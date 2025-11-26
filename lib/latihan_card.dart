@@ -273,6 +273,32 @@ class MycardNight extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(height: 20),
+            Card(
+              elevation: 8,
+              shadowColor: Colors.blueGrey[800],
+              clipBehavior: Clip.antiAlias,
+              
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey[800],
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Icon(Icons.credit_card, color: Colors.white, size: 40),
+                        Icon(Icons.contactless, color: Colors.white, size: 40),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
